@@ -11,4 +11,4 @@ namespace KeepDiveIFrames                                                       
         private void editFSM(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)                             {
             orig(self)                                                                                          ;
             if(self.gameObject.name == "Knight" && self.FsmName == "Spell Control")                             {
-                self.GetState("Quake Antic").RemoveAction(1)                                                    ;}}}}
+                self.GetValidState("Quake Antic").RemoveAction(1)                                               ;}}}}
